@@ -18,7 +18,7 @@ class m181121_083555_create_workers_table extends Migration
             'id_type' => $this->integer()->notNull(),
             'address' => $this->string(),
         ]);
-        $this->addForeignKey('id_type', 'tbl_type')
+       
     }
 
     /**

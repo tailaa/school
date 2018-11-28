@@ -3,19 +3,19 @@
 use yii\db\Migration;
 
 /**
- * Handles the creation of table `post`.
+ * Handles the creation of table `workers`.
  */
-class m181121_035128_create_post_table extends Migration
+class m181121_083555_create_workers_table extends Migration
 {
     /**
      * {@inheritdoc}
      */
     public function safeUp()
     {
-        $this->createTable('post', [
+        $this->createTable('workers', [
             'id' => $this->primaryKey(),
-            'id_worker' => $this->int(),
-            'id_type' => $this->int(),
+            'id_worker' => $this->integer()->notNull(),
+            'id_type' => $this->integer()->notNull(),
             'address' => $this->string(),
         ]);
     }
@@ -25,6 +25,6 @@ class m181121_035128_create_post_table extends Migration
      */
     public function safeDown()
     {
-        $this->dropTable('post');
+        $this->dropTable('workers');
     }
 }

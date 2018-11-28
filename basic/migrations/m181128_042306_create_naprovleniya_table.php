@@ -3,7 +3,7 @@
 use yii\db\Migration;
 
 /**
- * Handles the creation of table `naprovleniya`.
+ * Handles the creation of table `naprovleniya`. test
  */
 class m181128_042306_create_naprovleniya_table extends Migration
 {

@@ -32,7 +32,9 @@ class m181128_045604_create_parentscontact_table extends Migration
             'id_type_contact'
         );
 
+<<<<<<< HEAD
         // add foreign key for table `contacttype`
+<<<<<<< HEAD
         // $this->addForeignKey(
         //     'fk-parentscontact-id_type_contact',
         //     'parentscontact',
@@ -41,6 +43,12 @@ class m181128_045604_create_parentscontact_table extends Migration
         //     'id',
         //     'CASCADE'
         // );
+=======
+       
+=======
+        
+>>>>>>> 8a4270fb087cc73615c181f0e3131057f1a80282
+>>>>>>> f216f53c9803178a0393ea555ab2ce325e7fa493
     }
 
     /**

@@ -35,7 +35,7 @@ class m181205_034911_create_plan_table extends Migration
             'plan',
             'id_naprovleniya',
             'naprovleniya',
-            'id',
+            'id_naprovleniya',
             'CASCADE'
         );
     }

@@ -15,7 +15,7 @@ class m181128_042306_create_naprovleniya_table extends Migration
         $this->createTable('naprovleniya', [
             'id' => $this->primaryKey(),
             'nazvanie' => $this->string()->notNull(),
-            'id_ruk' => $this->int()->notNull(),
+            'id_ruk' => $this->integer()->notNull(),
         ]);
     }
 

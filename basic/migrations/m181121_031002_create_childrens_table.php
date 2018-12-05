@@ -22,14 +22,7 @@ class m181121_031002_create_childrens_table extends Migration
             'class' => $this->string(3)->notNull(),
         ]);
         // add foreign key for table `students`
-        $this->addForeignKey(
-            'fk-childrens_Students_id',
-            'Students',
-            'childrens_id',
-            'childrens',
-            'id',
-            'CASCADE'
-        );
+      
     }
 
     /**

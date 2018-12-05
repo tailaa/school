@@ -18,6 +18,14 @@ class m181205_031333_create_partition_table extends Migration
             'name' => $this->string()->notNull(),
             'type' => $this->integer()->notNull(),
         ]);
+        $this->addForeignKey(
+            'fk-partition-type',
+            'partition',
+            'type',
+            'partitionType',
+            'id',
+            'CASCADE'    
+               );
     }
 
     /**

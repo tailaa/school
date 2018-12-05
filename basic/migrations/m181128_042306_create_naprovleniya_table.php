@@ -13,7 +13,7 @@ class m181128_042306_create_naprovleniya_table extends Migration
     public function safeUp()
     {
         $this->createTable('naprovleniya', [
-            'id' => $this->primaryKey(),
+            'id_naprovleniya' => $this->primaryKey(),
             'nazvanie' => $this->string()->notNull(),
             'id_ruk' => $this->integer()->notNull(),
         ]);

@@ -5,12 +5,12 @@ namespace app\models;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use app\models\faces;
+use app\models\Faces;
 
 /**
- * PostSearch represents the model behind the search form of `app\models\faces`.
+ * FacesSearch represents the model behind the search form of `app\models\Faces`.
  */
-class PostSearch extends faces
+class FacesSearch extends Faces
 {
     /**
      * @inheritdoc
@@ -41,7 +41,7 @@ class PostSearch extends faces
      */
     public function search($params)
     {
-        $query = faces::find();
+        $query = Faces::find();
 
         // add conditions that should always apply here
 

@@ -3,16 +3,16 @@
 namespace app\controllers;
 
 use Yii;
-use app\models\faces;
-use app\models\PostSearch;
+use app\models\Faces;
+use app\models\FacesSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * PostController implements the CRUD actions for faces model.
+ * FacesController implements the CRUD actions for Faces model.
  */
-class PostController extends Controller
+class FacesController extends Controller
 {
     /**
      * @inheritdoc
@@ -30,12 +30,12 @@ class PostController extends Controller
     }
 
     /**
-     * Lists all faces models.
+     * Lists all Faces models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new PostSearch();
+        $searchModel = new FacesSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -45,7 +45,7 @@ class PostController extends Controller
     }
 
     /**
-     * Displays a single faces model.
+     * Displays a single Faces model.
      * @param integer $id
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
@@ -58,13 +58,13 @@ class PostController extends Controller
     }
 
     /**
-     * Creates a new faces model.
+     * Creates a new Faces model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new faces();
+        $model = new Faces();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -76,7 +76,7 @@ class PostController extends Controller
     }
 
     /**
-     * Updates an existing faces model.
+     * Updates an existing Faces model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -96,7 +96,7 @@ class PostController extends Controller
     }
 
     /**
-     * Deletes an existing faces model.
+     * Deletes an existing Faces model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -110,15 +110,15 @@ class PostController extends Controller
     }
 
     /**
-     * Finds the faces model based on its primary key value.
+     * Finds the Faces model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return faces the loaded model
+     * @return Faces the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = faces::findOne($id)) !== null) {
+        if (($model = Faces::findOne($id)) !== null) {
             return $model;
         }
 

@@ -21,13 +21,9 @@ class m181121_031002_create_childrens_table extends Migration
             'group' => $this->string(5)->notNull(),
             'class' => $this->string(3)->notNull(),
         ]);
-<<<<<<< HEAD
       
        
-=======
         // add foreign key for table `students`
-      
->>>>>>> 8a4270fb087cc73615c181f0e3131057f1a80282
     }
     /**
      * {@inheritdoc}

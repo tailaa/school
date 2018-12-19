@@ -23,7 +23,10 @@ class m181121_031002_create_childrens_table extends Migration
         ]);
       
        
+<<<<<<< HEAD
         // add foreign key for table `students`
+=======
+>>>>>>> 941d7cda2732981ffb43ccd58ce8baf792a11b84
     }
     /**
      * {@inheritdoc}

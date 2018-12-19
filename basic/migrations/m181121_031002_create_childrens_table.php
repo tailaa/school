@@ -3,7 +3,7 @@
 use yii\db\Migration;
 
 /**
- * Handles the creation of table `childrens`.
+ * sdcsdHandles the creation of table `childrens`.
  */
 class m181121_031002_create_childrens_table extends Migration
 {

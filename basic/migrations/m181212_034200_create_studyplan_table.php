@@ -13,10 +13,7 @@ class m181212_034200_create_studyplan_table extends Migration
     public function safeUp()
     {
         $this->createTable('studyplan', [
-            'id' => $this->primaryKey(),
-            'id_naprovleniya' => $this->integer()->notNull(),
-            'version' => $this->integer()->notNull(),
-            'god_obucheniya' => $this->integer()->notNull()
+            'id' => $this->primaryKey()
         ]);
     }
 
